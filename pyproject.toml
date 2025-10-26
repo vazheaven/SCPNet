@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ultralytics-scpnet"
+version = "0.0.1"
+requires-python = ">=3.8"
+description = "Local modified ultralytics with SCPNet modules"
+
+# 显式告诉 setuptools 只安装名为 ultralytics 的包
+[tool.setuptools]
+packages = ["ultralytics"]
+
+[tool.setuptools.package-data]
+"ultralytics" = [
+  "**/*.yaml", "**/*.yml", "**/*.pt",
+  "assets/**/*", "cfg/**/*", "data/**/*", "engine/**/*",
+  "hub/**/*", "models/**/*", "nn/**/*",
+  "solutions/**/*", "trackers/**/*", "utils/**/*", "SCPNet/**/*"
+]
+
+# （可选）恢复 yolo 命令行入口
+[project.scripts]
+yolo = "ultralytics.cfg:entrypoint"
