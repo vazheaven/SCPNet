@@ -1,6 +1,6 @@
 # Statistics-Enhanced Cross-Domain Perception Network for Spaceborne Infrared Tiny Ship Detection
 
-This repository contains **SCPNet**, our lightweight detection framework for spaceborne thermal infrared tiny-ship detection.  
+This repository contains **SCPNet**, our lightweight detection framework for spaceborne infrared tiny ship detection.  
 It ships with a **local, modified `ultralytics` package** (installed in editable mode) that includes our custom modules (e.g., `SEM`, `CDSAM`, `SFCAM`), model configs, and dataset configs.
 
 > If you can run Ultralytics YOLO, you can run SCPNet — the CLI is the same (`yolo ...`), but it loads this repo’s local sources.
