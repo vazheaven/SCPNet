@@ -159,11 +159,7 @@ We sincerely thank the Ultralytics team and community for their outstanding open
 
 ---
 
-## 10) License
 
-Please see the license files in this repository and respect the upstream Ultralytics license where applicable.
-
----
 
 ### Reproduce in 30 seconds (summary)
 
